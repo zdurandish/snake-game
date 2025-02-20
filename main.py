@@ -18,7 +18,11 @@ for position in positions:
     new_segment.goto(position)
     segments.append(new_segment)
 
-
+while game_is_on:
+    screen.update()
+    time.sleep(0.1)
+    for seg in segments:
+        seg.forward(10)
 
 
 
