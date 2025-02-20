@@ -11,6 +11,14 @@ segments = []
 game_is_on = True
 
 
+for position in positions:
+    new_segment = Turtle("square")
+    new_segment.penup()
+    new_segment.color("white")
+    new_segment.goto(position)
+    segments.append(new_segment)
+
+
 
 
 
